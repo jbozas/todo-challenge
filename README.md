@@ -1,37 +1,110 @@
-# Invera ToDo-List Challenge (Python/Django Jr-SSr)
+<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
+<a name="readme-top"></a>
 
-El propósito de esta prueba es conocer tu capacidad para crear una pequeña aplicación funcional en un límite de tiempo. A continuación, encontrarás las funciones, los requisitos y los puntos clave que debés tener en cuenta durante el desarrollo.
+<!-- PROJECT SHIELDS -->
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-## Qué queremos que hagas:
 
-- El Challenge consiste en crear una aplicación web sencilla que permita a los usuarios crear y mantener una lista de tareas.
-- La entrega del resultado será en un nuevo fork de este repo y deberás hacer una pequeña demo del funcionamiento y desarrollo del proyecto ante un super comité de las más grandes mentes maestras de Invera, o a un par de devs, lo que sea más fácil de conseguir.
-- Podes contactarnos en caso que tengas alguna consulta.
 
-## Objetivos:
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
 
-El usuario de la aplicación tiene que ser capaz de:
+<h3 align="center">TO-DO API</h3>
 
-- Autenticarse
-- Crear una tarea
-- Eliminar una tarea
-- Marcar tareas como completadas
-- Poder ver una lista de todas las tareas existentes
-- Filtrar/buscar tareas por fecha de creación y/o por el contenido de la misma
+  <p align="center">
+    Create a Task list, interact with them
+    <a href="https://github.com/jbozas/todo-challenge"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/jbozas/todo-challenge">Report Bug</a>
+    <a href="https://github.com/jbozas/todo-challenge">Request Feature</a>
+  </p>
+</div>
 
-## Qué evaluamos:
 
-- Desarrollo utilizando Python, Django. No es necesario crear un Front-End, pero sí es necesario tener una API que permita cumplir con los objetivos de arriba.
-- Uso de librerías y paquetes estandares que reduzcan la cantidad de código propio añadido.
-- Calidad y arquitectura de código. Facilidad de lectura y mantenimiento del código. Estándares seguidos.
-- [Bonus] Manejo de logs.
-- [Bonus] Creación de tests (unitarias y de integración)
-- [Bonus] Unificar la solución propuesta en una imagen de Docker por repositorio para poder ser ejecutada en cualquier ambiente (si aplica para full stack).
 
-## Requerimientos de entrega:
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+  </ol>
+</details>
 
-- Hacer un fork del proyecto y pushearlo en github. Puede ser privado.
-- La solución debe correr correctamente.
-- El Readme debe contener todas las instrucciones para poder levantar la aplicación, en caso de ser necesario, y explicar cómo se usa.
-- Disponibilidad para realizar una pequeña demo del proyecto al finalizar el challenge.
-- Tiempo para la entrega: Aproximadamente 7 días.
+
+
+### Built With
+
+[![Django][Django-url]][Django-url]
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+With this API you can:
+
+  - Handle User:
+    - Create a user
+    - Login
+    - Get user token
+    - Refresh user's token
+  - Handle Task:
+    - Create a Task
+    - Retrieve a single task
+    - Mark a task as completed
+    - Delete a Task
+    - Update a Task
+    - Retrieve a Task List and filter it. 
+
+
+### Installation
+
+1. Build the image.
+   ```
+   docker build -t baseapi .
+   ```
+2. Run it.
+   ```
+   docker run -p 8000:8000 baseapi
+   ```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/jbozas/todo-challenge.svg?style=for-the-badge
+[contributors-url]: https://github.com/jbozas/todo-challenge/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/jbozas/todo-challenge.svg?style=for-the-badge
+[forks-url]: https://github.com/jbozas/todo-challenge/network/members
+[stars-shield]: https://img.shields.io/github/stars/jbozas/todo-challenge.svg?style=for-the-badge
+[stars-url]: https://github.com/jbozas/todo-challenge/stargazers
+[issues-shield]: https://img.shields.io/github/issues/jbozas/todo-challenge.svg?style=for-the-badge
+[issues-url]: https://github.com/jbozas/todo-challenge/issues
+[license-shield]: https://img.shields.io/github/license/jbozas/todo-challenge.svg?style=for-the-badge
+[license-url]: https://github.com/jbozas/todo-challenge/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/jbozas
+[product-screenshot]: images/screenshot.png
+[Django-url]: https://img.shields.io/badge/django-%252300ADD8.svg?style=for-the-badge&logo=django&logoColor=white
